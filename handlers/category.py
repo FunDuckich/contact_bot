@@ -30,7 +30,8 @@ async def category_chosen(callback: CallbackQuery, state: FSMContext):
                         "Дата и время\n"
                         "Количество билетов, ряд и места\n"
                         "Цена\n"
-                        "Номер для связи или ник через @")
+                        "Ник через @\n"
+                        "Номер для связи (эта информация нужна администратору канала, про желании номер не будет показываться в сообщении о пристрое)")
         msg = await callback.message.edit_text(instructions, reply_markup=markup)
         await state.update_data(last_bot_message_id=msg.message_id)
         await state.set_state(CategoryForm.tickets)

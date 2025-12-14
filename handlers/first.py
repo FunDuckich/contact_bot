@@ -8,10 +8,10 @@ from aiogram.filters.command import Command
 r = Router()
 
 
-# @r.message()
-# async def get_chat_id(message: Message):
-#     print(f"Chat ID: {message.chat.id}")
-#     await message.answer("Всё, я получил id чатика)")
+#@r.message()
+#async def get_chat_id(message: Message):
+#    print(f"Chat ID: {message.chat.id}")
+#    await message.answer("Всё, я получил id чатика)")
 
 
 @r.message(Command("start"))
